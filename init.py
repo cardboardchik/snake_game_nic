@@ -60,7 +60,7 @@ class SnakeGame:
         self.snake_food.goto(0, 150)
 
         self.game_info = turtle.Turtle()
-        self.game_info.color("white")
+        self.game_info.color("red")
         self.game_info.hideturtle()
         self.game_info.penup()
         self.game_info.goto(-235, 210)
@@ -92,7 +92,6 @@ class SnakeGame:
                 x_body, y_body = self.snake.snake_head.pos()
                 new_body = turtle.Turtle()
                 new_body.shape("square")
-                new_body.color("white")
                 new_body.speed(0)
                 new_body.penup()
 
@@ -152,8 +151,14 @@ class SnakeGame:
                 self.record_score = score
             
             time.sleep(0.1)
-        
+
 
 snake = Snake()
 game = SnakeGame(snake)
 game.run_game()
+
+def plus(a,b):
+    return a+b
+
+if __name__ == '__main__':
+    print(plus(10,10))
