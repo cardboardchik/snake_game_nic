@@ -162,3 +162,9 @@ def plus(a,b):
 
 if __name__ == '__main__':
     print(plus(10,10))
+
+def plus(a,b):
+    return a+b
+
+if __name__ == '__main__':
+    print(plus(10,10))
